@@ -1,0 +1,102 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family : monospace;
+}
+
+body{
+    text-align: center;
+    margin : 1.5rem;
+    display : flex;
+    flex-direction : column ;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4rem;
+    margin : 2rem;
+}
+
+form{
+    display : flex;
+    flex-direction : column ;
+    justify-content: flex-start;
+
+}
+
+.inputs {
+    display : flex;
+    gap : 1rem;
+    justify-content: space-between;
+    margin : 1rem;
+    width : 75rem;
+}
+
+input{
+    width : 20rem;
+    height : 2rem;
+    padding : .5rem;
+}
+
+.formBook , .formStatus , .formAuthor{
+    margin : 1rem;
+    display : flex;
+    flex-direction : column;
+    align-items: start;
+    gap : 1rem
+}
+
+#status{
+    height : 2rem;
+    width : 6rem;
+}
+
+label{
+    font-weight : 700;
+}
+
+button{
+    height : 3rem;
+    width : 6rem;
+    border-radius: 1rem;
+    margin : 1.4rem;
+    cursor : pointer;
+}
+
+.card {
+    width: 70rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.readBox {
+    border: 1px solid black;
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor : pointer;
+}
+
+.records {
+    border: 1px solid black;
+    width: 85rem;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    gap : 1.5rem;
+}

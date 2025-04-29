@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Book Library</h1>
+    <form>
+        <div class="inputs">
+            <div class="formBook">
+                <label for="book">Book</label>
+            <input type="text"  id="book" required>
+            </div>
+            <div class="formAuthor">
+                <label for="author">Author</label>
+            <input type="text"  id="author" required>
+            </div>
+            <div class="formStatus">
+                <label for="status">Status</label>
+                <select id="status">
+                  <option>Read</option>
+                  <option>Not Read</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="records">
+        <div class="card">
+            <p>Harry Potter</p>
+            <p>Author</p>
+            <div class="readBox">
+                read
+            </div>
+            <button>Delete</button>
+        </div>
+        <div class="card">
+            <p>Harry Potter</p>
+            <p>Author</p>
+            <div class="readBox">
+                read
+            </div>
+            <button>Delete</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
