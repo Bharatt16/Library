@@ -12,6 +12,7 @@ body{
     flex-direction : column ;
     justify-content: center;
     align-items: center;
+    background-color: #FFF0BD;
 }
 
 h1{
@@ -23,7 +24,16 @@ form{
     display : flex;
     flex-direction : column ;
     justify-content: flex-start;
+    border-bottom : 1px solid black;
+    padding-bottom: 1rem;
 
+}
+
+
+.buttons {
+    display: flex;
+    margin-top: 1rem;
+    gap : 5rem
 }
 
 .inputs {
@@ -34,10 +44,11 @@ form{
     width : 75rem;
 }
 
-input{
-    width : 20rem;
-    height : 2rem;
-    padding : .5rem;
+input {
+    width: 20rem;
+    height: 2.5rem;
+    padding: .5rem;
+    border-radius: 1rem;
 }
 
 .formBook , .formStatus , .formAuthor{
@@ -48,9 +59,11 @@ input{
     gap : 1rem
 }
 
-#status{
-    height : 2rem;
-    width : 6rem;
+#status {
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 0.75rem;
+    border: 1.5px solid;
 }
 
 label{
@@ -77,8 +90,26 @@ button{
     padding: 1rem;
 }
 
+.card.read {
+    background-color: #d1ffd6; /* light green for Read */
+    border : 2px solid rgb(48, 90, 48);
+}
+
+.card.not-read {
+    background-color: #ffd1d1; /* light red for Not Read */
+    border : 2px solid rgb(106, 41, 41);
+  }
+  
+
+.name{
+    margin-right : auto;
+}
+.author{
+    margin : 0 200px;
+}
+
 .readBox {
-    border: 1px solid black;
+    border: 1.5px solid black;
     height: 2.5rem;
     width: 7rem;
     border-radius: 1rem;
@@ -89,7 +120,7 @@ button{
 }
 
 .records {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 85rem;
     display: flex;
     flex-direction : column;
