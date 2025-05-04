@@ -78,6 +78,16 @@ button{
     cursor : pointer;
 }
 
+button.delete {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+}
+
+button.delete:hover {
+    background-color: #cc0000;
+}
+
 .card {
     width: 70rem;
     height: 5rem;

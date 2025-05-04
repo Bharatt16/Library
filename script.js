@@ -49,7 +49,7 @@ function displayBook(bookObj) {
     <p class="name">${bookObj.book}</p>
     <p class="author">${bookObj.author}</p>
     <div class="readBox">${bookObj.read}</div>
-    <button>Delete</button>
+    <button class="delete">Delete</button>
   `;
 
   records.appendChild(card);
