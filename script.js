@@ -6,16 +6,25 @@ const records = document.querySelector(".records");
 
 const myLibrary = [];
 
-function Book(book, author, read) {
-  if (!new.target) {
-    throw Error("You must use the 'new' operator to call the constructor");
+class Book {
+  constructor(book,author,read){
+    this.book = book ;                                 //USING CLASS
+    this.author = author ;
+    this.read = read ;
+    this.id = crypto.randomUUID();
   }
-
-  this.book = book;
-  this.author = author;
-  this.read = read;
-  this.id = crypto.randomUUID();
 }
+
+// function Book(book, author, read) {
+//   if (!new.target) {
+//     throw Error("You must use the 'new' operator to call the constructor");
+//   }
+                                // USING CONSTRUCTORS
+//   this.book = book;
+//   this.author = author;
+//   this.read = read;
+//   this.id = crypto.randomUUID();
+// }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
